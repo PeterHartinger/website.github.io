@@ -2,70 +2,237 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Hartinger | Profile</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="img/HOB_6343.JPG" alt="image">
-    <h1>Hi, I am Peter,<br>
-        Corporate & Business IT
-    </h1>
-    <hr>
-    <h3>Languages</h3>
-    <div>German</div>
-    <div>Englisch</div>
-    <hr>
-    <h3>Hard Skills</h3>
-    <div>Java</div>
-    <div>Ubuntu</div>
-    <div>VMWare</div>
-    <div>Github</div>
-    <hr>
-    <h3>Soft Skills</h3>
-    <div>Teamwork</div>
-    <hr>
-    <h3>Education</h3>
-    <div>
-        Hochschule
-        <br>
-        Mannheim
-        <br>
-        2023-2027
+    <div class="container">
+        <!-- Header with Profile Picture and Contact Links -->
+        <header>
+            <img src="img/HOB_6343.JPG" alt="Profile picture of Peter">
+            <h1>Peter Hartinger</h1>
+            <p>Corporate & Business IT</p>
+            <div class="button-group">
+                <a href="https://www.linkedin.com/in/peter-hartinger-2b1350291/" target="_blank" class="button">LinkedIn</a>
+                <a href="https://github.com/PeterHartinger" target="_blank" class="button">GitHub</a>
+            </div>
+        </header>
+
+        <!-- Main Content Sections -->
+        <main>
+
+            <!-- Personal Statement Section -->
+            <section id="personal-statement">
+                <h2>Personal Statement</h2>
+                <p>Passionate about leveraging technology to drive business efficiency and innovation, I am committed to applying my skills in IT and corporate environments to support team success. Eager to grow and contribute in a collaborative setting, I bring adaptability, problem-solving, and a strong foundation in both hard and soft skills.</p>
+            </section>
+
+            <!-- Hard Skills Section -->
+            <section id="hard-skills">
+                <h2>Hard Skills</h2>
+                <ul>
+                    <li>Java</li>
+                    <li>Ubuntu</li>
+                    <li>VMWare</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>MS 365</li>
+                    <li>3D-Printing</li>
+                    <li>Autodesk Fusion</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Laser Cutter</li>
+                </ul>
+            </section>
+
+            <!-- Soft Skills Section -->
+            <section id="soft-skills">
+                <h2>Soft Skills</h2>
+                <ul>
+                    <li>Teamwork</li>
+                    <li>Problem-Solving</li>
+                    <li>Adaptability</li>
+                    <li>Time Management</li>
+                    <li>Communication</li>
+                    <li>Creativity</li>
+                </ul>
+            </section>
+
+            <!-- Languages Section -->
+            <section id="languages">
+                <h2>Languages</h2>
+                <p>German, English</p>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education-entry">
+                    <h3>Hochschule Mannheim</h3>
+                    <p>2023-2027</p>
+                </div>
+                <div class="education-entry">
+                    <h3>Gymnasium Riedberg</h3>
+                    <p>2014-2023</p>
+                </div>
+            </section>
+
+            <!-- Contact Information -->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
+            </section>
+
+            <!-- Centered Resume Download Link at the Bottom -->
+            <div class="centered-button">
+                <a href="CV-Peter-Hartinger.pdf" download="Peter_Hartinger_Resume.pdf" class="button">Download Resume</a>
+            </div>
+
+        </main>
     </div>
-    <br>
-    <div>
-        Gymnasium
-        <br>
-        Riedberg
-        <br>
-        2014-2023
-    </div>
-    <br>
-    <br>
-    <a href="https://www.linkedin.com/in/peter-hartinger-2b1350291/">LinkedIn</a>
 </body>
 </html>
 
+
+
 <style>
-    body{
-        text-align: center;
-    }
+/* Resetting default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    img{
-        height: 10rem;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
-        border-radius: 50%;
-    }
+/* Centering Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
 
-    hr{
-        margin-top: 3rem;
-    }
+/* Body and General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    line-height: 1.6;
+}
 
-    @media only screen and (max-width: 17rem){
-        img{
-            width: 90%;
-            height: auto;
-        }
-    }
+header {
+    margin-bottom: 2rem;
+}
+
+header img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.button-group {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/* Button Styling for LinkedIn, GitHub, and Resume */
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #0073b1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #005582;
+}
+
+/* Personal Statement Styling */
+#personal-statement {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+#personal-statement h2 {
+    color: #0073b1;
+    margin-bottom: 0.5rem;
+}
+
+/* Skills Section Styling */
+#hard-skills, #soft-skills, #languages, #education {
+    background-color: #fff;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#hard-skills h2, #soft-skills h2, #languages h2, #education h2 {
+    font-size: 1.5rem;
+    color: #0073b1;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    font-size: 1rem;
+    padding: 0.2rem 0;
+}
+
+/* Education Section Styling */
+.education-entry {
+    margin-bottom: 1rem;
+}
+
+.education-entry h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Contact Section Styling */
+#contact {
+    margin-top: 2rem;
+}
+
+#contact a {
+    color: #0073b1;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Centered Resume Download Button */
+.centered-button {
+    text-align: center;
+    margin-top: 2rem;
+}
+
 </style>
