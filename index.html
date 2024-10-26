@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peter Hartinger | Profile</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -15,7 +15,7 @@
             <p>Corporate & Business IT</p>
             <div class="button-group">
                 <a href="https://www.linkedin.com/in/peter-hartinger-2b1350291/" target="_blank" class="button">LinkedIn</a>
-                <a href="https://github.com/PeterHartinger" target="_blank" class="button">GitHub</a>
+                <a href="https://github.com/yourgithubusername" target="_blank" class="button">GitHub</a>
             </div>
         </header>
 
@@ -28,10 +28,10 @@
                 <p>Passionate about leveraging technology to drive business efficiency and innovation, I am committed to applying my skills in IT and corporate environments to support team success. Eager to grow and contribute in a collaborative setting, I bring adaptability, problem-solving, and a strong foundation in both hard and soft skills.</p>
             </section>
 
-            <!-- Hard Skills Section -->
+            <!-- Hard Skills Section (Single Column) -->
             <section id="hard-skills">
                 <h2>Hard Skills</h2>
-                <ul>
+                <ul class="skills-list">
                     <li>Java</li>
                     <li>Ubuntu</li>
                     <li>VMWare</li>
@@ -48,7 +48,7 @@
             <!-- Soft Skills Section -->
             <section id="soft-skills">
                 <h2>Soft Skills</h2>
-                <ul>
+                <ul class="skills-list">
                     <li>Teamwork</li>
                     <li>Problem-Solving</li>
                     <li>Adaptability</li>
@@ -56,6 +56,22 @@
                     <li>Communication</li>
                     <li>Creativity</li>
                 </ul>
+            </section>
+
+            <!-- Portfolio Section with Projects -->
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+                <div class="project">
+                    <h3>Flight Logbook</h3>
+                    <p>The objective of this project was to develop an app to support a pilot. The professor, who is also a hobby pilot, requested the creation of an app that would automate tasks and relieve him of certain responsibilities during flight. The project progressed from the initial concept to the finalised product.</p>
+                    <a href="AirLogix.html" target="_blank" class="read-more-link">Read more</a>
+                </div>
+                
+                <div class="project">
+                    <h3>Tic-Tac-Toe</h3>
+                    <p>In our first semester, we had to put our acquired knowledge into practice by programming a small application. I decided to program the classic tic-tac-toe game.</p>
+                    <a href="https://github.com/PeterHartinger/TicTacToe" target="_blank" class="read-more-link">GitHub Repo</a>
+                </div>
             </section>
 
             <!-- Languages Section -->
@@ -80,7 +96,7 @@
             <!-- Contact Information -->
             <section id="contact">
                 <h2>Contact</h2>
-                <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
+                <p>Email: <a href="mailto:peter.hartinger.work@gmail.com">peter.hartinger.work@gmail.com</a></p>
             </section>
 
             <!-- Centered Resume Download Link at the Bottom -->
@@ -92,147 +108,3 @@
     </div>
 </body>
 </html>
-
-
-
-<style>
-/* Resetting default browser styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* Centering Container */
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* Body and General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    line-height: 1.6;
-}
-
-header {
-    margin-bottom: 2rem;
-}
-
-header img {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-}
-
-header h1 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-.button-group {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-/* Button Styling for LinkedIn, GitHub, and Resume */
-.button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #0073b1;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.button:hover {
-    background-color: #005582;
-}
-
-/* Personal Statement Styling */
-#personal-statement {
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-}
-
-#personal-statement h2 {
-    color: #0073b1;
-    margin-bottom: 0.5rem;
-}
-
-/* Skills Section Styling */
-#hard-skills, #soft-skills, #languages, #education {
-    background-color: #fff;
-    margin: 1.5rem 0;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-#hard-skills h2, #soft-skills h2, #languages h2, #education h2 {
-    font-size: 1.5rem;
-    color: #0073b1;
-    margin-bottom: 0.5rem;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-li {
-    font-size: 1rem;
-    padding: 0.2rem 0;
-}
-
-/* Education Section Styling */
-.education-entry {
-    margin-bottom: 1rem;
-}
-
-.education-entry h3 {
-    font-size: 1.2rem;
-    color: #333;
-}
-
-/* Contact Section Styling */
-#contact {
-    margin-top: 2rem;
-}
-
-#contact a {
-    color: #0073b1;
-    text-decoration: none;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* Centered Resume Download Button */
-.centered-button {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-</style>
